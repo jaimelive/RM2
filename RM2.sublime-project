@@ -1,0 +1,111 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"obj"
+			],
+			"file_exclude_patterns":
+			[
+				"*.aux",
+				"*.lof",
+				"*.log",
+				"*.lot",
+				"*.fls",
+				"*.out",
+				"*.toc",
+				"*.fmt",
+				"*.fot",
+				"*.cb",
+				"*.cb2",
+				"*.lb",
+				"*.dvi",
+				"*.xdv",
+				"*.bbl",
+				"*.bcf",
+				"*.blg",
+				"*-blx.aux",
+				"*-blx.bib",
+				"*.run.xml",
+				"*.fdb_latexmk",
+				"*.synctex",
+				"*.synctex(busy)",
+				"*.synctex.gz",
+				"*.synctex.gz(busy)",
+				"*.pdfsync",
+				"*.acn",
+				"*.acr",
+				"*.glg",
+				"*.glo",
+				"*.gls",
+				"*.glsdefs",
+				"*.ist",
+				"*.tdo"
+			],
+			"binary_file_patterns":
+			[
+				"*.pdf",
+				"*.png"
+			],
+			"index_include_patterns":
+			[
+				"*.tex"
+			],
+			"follow_symlinks": false,
+			"name": "RM2",
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"hide_build_panel": "no_errors",
+		"builder": "traditional",
+		"tab_size": 4,
+		"aux_directory": "obj",
+		"output_directory": "obj",
+		"copy_output_on_build": false,
+		"temp_files_exts":
+		[
+			".blg",
+			".bbl",
+			".aux",
+			".log",
+			".brf",
+			".nlo",
+			".out",
+			".dvi",
+			".ps",
+			".lof",
+			".toc",
+			".fls",
+			".fdb_latexmk",
+			".pdfsync",
+			".synctex.gz",
+			".ind",
+			".ilg",
+			".idx",
+			".acn",
+			".acr",
+			".glg",
+			".glo",
+			".gls",
+			".glsdefs",
+			".ist",
+			".tdo"
+		]
+	},
+	"build_systems":
+	[
+		{
+			"name": "Make Display",
+			"selector": "*.tex",
+			"shell_cmd": "make display"
+		},
+		{
+			"name": "Make Clean",
+			"selector": "*.tex",
+			"shell_cmd": "make clean"
+		}
+	]
+}
