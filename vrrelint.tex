@@ -1,0 +1,48 @@
+\documentclass[acmlarge]{acmart}
+
+\usepackage[utf8]{inputenc}
+\usepackage{glossaries}
+
+\input{sections/commands}
+
+\makeglossaries
+\loadglsentries{sections/glossaries.tex}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\setcopyright{acmcopyright}
+\copyrightyear{2022}
+\acmYear{2022}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+\citestyle{acmauthoryear}
+
+\begin{document}
+
+\title{Relationships and Intimacy in Virtual Reality Social Settings}
+
+\author{Jaime Correia}
+\email{jaimec@dei.uc.pt}
+\orcid{0000-0001-9796-1913}
+\affiliation{%
+  \institution{University of Coimbra}
+  \city{Coimbra}
+  \country{Portugal}
+}
+\renewcommand{\shortauthors}{Correia}
+
+\begin{abstract}
+  \input{sections/abstract}
+  \label{section::abstract}
+\end{abstract}
+\keywords{embodiment, virtual reality}
+
+\maketitle
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+\end{document}
+\endinput
