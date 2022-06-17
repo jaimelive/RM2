@@ -1,6 +1,8 @@
 \documentclass[acmlarge]{acmart}
+%\documentclass[acmtog]{acmart}
 
 \usepackage[utf8]{inputenc}
+\usepackage{xspace}
 \usepackage{glossaries}
 
 \input{sections/commands}
@@ -15,9 +17,9 @@
 \setcopyright{acmcopyright}
 \copyrightyear{2022}
 \acmYear{2022}
-\acmDOI{XXXXXXX.XXXXXXX}
+\acmDOI{10.1000/182}
 
-\citestyle{acmauthoryear}
+%\citestyle{acmauthoryear}
 
 \begin{document}
 
@@ -34,15 +36,23 @@
 \renewcommand{\shortauthors}{Correia}
 
 \begin{abstract}
-  \input{sections/abstract}
-  \label{section::abstract}
+  \input{sections/abstract}\label{section::abstract}
 \end{abstract}
 \keywords{embodiment, virtual reality}
 
 \maketitle
+\section{Introduction}\label{sec::introduction}\input{sections/introduction}
+\section{State of the Art}\label{sec::soa}\input{sections/soa}
+\section{Methodology}\label{sec::methodology}\input{sections/methodology}
+\section{Data Collection and Analysis}\label{sec::datacollection}\input{sections/data_collection}
+\section{Analysis and Results}\label{sec::analysisandresults}\input{sections/analysis_and_results}
+\section{Discussion}\label{sec::discussion}\input{sections/discussion}
+\section{Interpretation Limits}\label{sec::interpretationlimits}\input{sections/interpretation_limits}
+\section{Conclusions}\label{sec::conclusions}\input{sections/conclusions}
+
 
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+\bibliography{bib/vrrelint.bib}
 \end{document}
 \endinput
